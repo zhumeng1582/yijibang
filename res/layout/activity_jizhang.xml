@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android_custom="http://schemas.android.com/apk/res/com.example.yijibang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativieLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@color/blue" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical" >
+            <TextView
+		        android:id="@+id/textView1"
+		        android:layout_gravity="center"
+		        android:gravity="center"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white"
+		        android:textSize="17sp"
+		        android:text="记账" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/qiehuanzuo" />
+
+            <TextView
+		        android:id="@+id/textView1"
+		        android:layout_gravity="center"
+		        
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white"
+		        android:textSize="15sp"
+		        android:text="2014年09月" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/qiehuanyou" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <com.example.yijibang.jizhang.RoundProgressBar
+		        android:id="@+id/roundProgressBarShouRu"
+		        android:layout_width="84dip"
+		        android:layout_height="84dip"
+		        android:layout_margin="10dp"
+		        android_custom:textTitle="收入"
+		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
+		        android_custom:roundWidth="4dip"
+		        android_custom:roundProgressColor="@color/progress1"
+		         />
+            <com.example.yijibang.jizhang.RoundProgressBar
+		        android:id="@+id/roundProgressBarZhiChu"
+		        android:layout_width="84dip"
+		        android:layout_height="84dip" 
+		        android:layout_margin="10dp"
+		        android_custom:textTitle="支出"
+		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
+		        android_custom:roundWidth="4dip"
+		        android_custom:roundProgressColor="@color/progress2"
+		        />
+            <com.example.yijibang.jizhang.RoundProgressBar
+		        android:id="@+id/roundProgressBarJieYu"
+		        android:layout_width="84dip"
+		        android:layout_height="84dip" 
+		        android:layout_margin="10dp"
+		        android_custom:textTitle="结余"
+		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
+		        android_custom:roundWidth="4dip"
+		        android_custom:roundProgressColor="@color/progress3"
+		        />
+           
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativieLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal" >
+            <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+            <TextView
+                android:id="@+id/tVjiyibi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记一笔"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/relativieLayout2"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@id/relativieLayout3"
+       android:layout_below="@id/relativieLayout1">
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/android:empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bi" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="养成好的记录习惯，从现在开始吧"
+                android:textSize="14sp"
+                android:textColor="@color/qian" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+   
+    
+</RelativeLayout>

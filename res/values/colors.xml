@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="shen">#606060</color>
+    <color name="qian">#909090</color>
+    <color name="grey">#848484</color>
+    <color name="black">#000000</color>
+    <color name="blue">#53BDFF</color>
+    <color name="red">#FF6D55</color>
+    <color name="progress1">#C6E9FF</color>
+    <color name="progress2">#FF6D55</color>
+    <color name="progress3">#13EFA0</color>
+    <color name="roundprogressbarbackgroundcolor">#3477A1</color>
+    <color name="radio_select">#31A2E8</color>
+    <color name="radio_normal">#7ACCFF</color>
+    <color name="lightblack">#ffffff</color>
+</resources>
