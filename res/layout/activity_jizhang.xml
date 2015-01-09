@@ -3,6 +3,7 @@
      xmlns:android_custom="http://schemas.android.com/apk/res/com.example.yijibang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -22,7 +23,6 @@
             android:layout_marginBottom="4dp"
             android:orientation="vertical" >
             <TextView
-		        android:id="@+id/textView1"
 		        android:layout_gravity="center"
 		        android:gravity="center"
 		        android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
 		        android:textSize="15sp"
 		        android:text="2014年09月" />
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -88,7 +88,7 @@
 		        android_custom:textTitle="支出"
 		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
 		        android_custom:roundWidth="4dip"
-		        android_custom:roundProgressColor="@color/progress2"
+		        android_custom:roundProgressColor="@color/red"
 		        />
             <com.example.yijibang.jizhang.RoundProgressBar
 		        android:id="@+id/roundProgressBarJieYu"
@@ -98,7 +98,7 @@
 		        android_custom:textTitle="结余"
 		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
 		        android_custom:roundWidth="4dip"
-		        android_custom:roundProgressColor="@color/progress3"
+		        android_custom:roundProgressColor="@color/green"
 		        />
            
         </LinearLayout>
@@ -107,26 +107,27 @@
     <RelativeLayout
         android:id="@+id/relativieLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@color/red"
         android:gravity="center" >
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
+            android:id="@+id/linearLayout4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_height="match_parent"
             android:orientation="horizontal" >
             <ImageView
-	            android:id="@+id/imageView2"
+	            android:id="@+id/imageView3"
 	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
+	            android:layout_height="match_parent"
+	            
 	            android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
             <TextView
                 android:id="@+id/tVjiyibi"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:text="记一笔"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -140,20 +141,22 @@
        android:layout_height="wrap_content"
        android:layout_above="@id/relativieLayout3"
        android:layout_below="@id/relativieLayout1">
+        
 
-        <ListView
-            android:id="@+id/android:list"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-
+       <com.example.yijibang.jizhang.SlideExpandableListView.ActionSlideExpandableListView
+           android:id="@+id/list"
+           android:layout_height="fill_parent"
+           android:layout_width="fill_parent"
+           android:divider="@color/divider"
+        	android:dividerHeight="1dp"/>
         <LinearLayout
-            android:id="@+id/android:empty"
+            android:id="@+id/empty"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
             android:orientation="vertical" >
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/bi" />

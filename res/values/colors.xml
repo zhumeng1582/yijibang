@@ -4,14 +4,19 @@
     <color name="shen">#606060</color>
     <color name="qian">#909090</color>
     <color name="grey">#848484</color>
+    <color name="divider">#d9d9d9</color>
     <color name="black">#000000</color>
     <color name="blue">#53BDFF</color>
     <color name="red">#FF6D55</color>
     <color name="progress1">#C6E9FF</color>
-    <color name="progress2">#FF6D55</color>
-    <color name="progress3">#13EFA0</color>
+    
+    <color name="green">#13EFA0</color>
     <color name="roundprogressbarbackgroundcolor">#3477A1</color>
     <color name="radio_select">#31A2E8</color>
     <color name="radio_normal">#7ACCFF</color>
     <color name="lightblack">#ffffff</color>
+    <color name="gridview_background">#E0E0E0</color>
+    <color name="gridview_context">#F1F1F1</color>
+    
+    
 </resources>
