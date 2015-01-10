@@ -3,7 +3,6 @@
      xmlns:android_custom="http://schemas.android.com/apk/res/com.example.yijibang"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3E3E3"
     android:orientation="vertical" >
 
     <RelativeLayout
@@ -17,22 +16,28 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
             android:orientation="horizontal">
-            <ImageView
-			    android:id="@+id/imageView4"
-			    android:layout_alignParentLeft="true"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:layout_margin="4dp"
-			    android:src="@drawable/fanhuidaohang" />
-            <TextView
-                android:id="@+id/textView1"
-		       	android:layout_toRightOf="@id/imageView4"
-		       	android:layout_width="wrap_content"
-		       	android:layout_height="wrap_content"
-		       	android:layout_margin="4dp"
-		       	android:textColor="@color/white"
-		       	android:textSize="15sp"
-		       	android:text="返回" />
+            <LinearLayout
+                android:id="@+id/viewReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+                <ImageView
+				    android:id="@+id/ivReturn"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/fanhuidaohang" />
+            	<TextView
+	                android:id="@+id/tvReturn"
+			       	android:layout_width="wrap_content"
+			       	android:layout_height="wrap_content"
+			       	android:layout_margin="4dp"
+			       	android:textColor="@color/white"
+			       	android:textSize="15sp"
+			       	android:text="返回" />
+            </LinearLayout>
+            
 		  	<TextView
 		       	android:id="@+id/textView1"
 		       	android:layout_centerHorizontal="true"
@@ -43,7 +48,7 @@
 		       	android:textSize="17sp"
 		       	android:text="记一笔" />
 			<TextView
-		       	android:id="@+id/textView1"
+		       	android:id="@+id/viewSave"
 		       	android:layout_alignParentRight="true"
 		       	android:layout_width="wrap_content"
 		       	android:layout_height="wrap_content"
@@ -140,16 +145,16 @@
 	            android:keyTextSize="17sp"
 	            android:focusableInTouchMode="true"
 	            android:background="@color/lightblack"
-	            android:keyBackground="@drawable/jianpan_border" 
+	            android:keyBackground="@drawable/keyboard_key" 
 	            android:keyTextColor="@color/qian"/>
 
         </LinearLayout>
     </RelativeLayout>
     
-    <RelativeLayout android:id="@+id/relativieLayout3"
+    <LinearLayout android:id="@+id/relativieLayout3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="1dp"
             android:layout_below="@id/relativieLayout1"
             android:layout_above="@id/relativieLayout4"
             android:orientation="vertical">
@@ -157,8 +162,8 @@
 		<LinearLayout
 		    android:id="@+id/linearLayoutDateTime"
 		    android:layout_width="fill_parent"
-		    android:layout_height="50dp"
-		    android:layout_alignParentTop="true"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
 		    android:background="#FFFFFF"
 		    android:gravity="center_vertical"
 		    android:orientation="horizontal" >
@@ -190,10 +195,10 @@
         <LinearLayout
             android:id="@+id/linearLayoutDetails"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="1dp"
 		    android:background="#FFFFFF"
-            android:layout_below="@id/linearLayoutDateTime"
+            android:layout_weight="4"
             android:orientation="vertical">
 
 		    <LinearLayout
@@ -221,7 +226,7 @@
 		    <RelativeLayout
 		        android:id="@+id/myView"
 				android:layout_width="fill_parent"
-				android:layout_height="120dp"
+				android:layout_height="wrap_content"
 				android:layout_marginLeft="23dp"
 				android:layout_marginRight="23dp" >
 				<com.example.yijibang.jizhang.biaoqian.ScrollLayout
@@ -239,5 +244,5 @@
 		    </RelativeLayout>
             
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 </RelativeLayout>

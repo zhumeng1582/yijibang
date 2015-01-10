@@ -15,13 +15,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+
 
 public class jizhangActivity extends Activity {
 
-	private LinearLayout linearLayout4;
+	private RelativeLayout relativieLayout3;
 	private RoundProgressBar roundProgressBarShouRu;
 	private RoundProgressBar roundProgressBarZhiChu;
 	private RoundProgressBar roundProgressBarJieYu;
@@ -29,6 +29,9 @@ public class jizhangActivity extends Activity {
 	private List<SeletorDataInfo> roomList = new  ArrayList<SeletorDataInfo>(); 
 	private List<MessageItem> subList = new  ArrayList<MessageItem>(); 
 	private List<List<MessageItem>> allList = new  ArrayList<List<MessageItem>>();
+	
+	private ActionSlideExpandableListView list;
+	
 	
 	@SuppressWarnings("unused")
 	public void onCreate(Bundle savedInstanceState) {
@@ -40,9 +43,9 @@ public class jizhangActivity extends Activity {
 		
 		View emptyView = findViewById(R.id.empty);
 		
-		linearLayout4 = (LinearLayout) findViewById(R.id.linearLayout4);
+		relativieLayout3 = (RelativeLayout) findViewById(R.id.relativieLayout3);
 		
-		linearLayout4.setOnClickListener(new OnClickListener() {
+		relativieLayout3.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
@@ -64,9 +67,9 @@ public class jizhangActivity extends Activity {
 		roundProgressBarJieYu.setMax(8800);
 		roundProgressBarJieYu.setProgress(6600);
 		
-		ActionSlideExpandableListView list = (ActionSlideExpandableListView)this.findViewById(R.id.list);
-		
-
+		list = (ActionSlideExpandableListView)this.findViewById(R.id.list);
+//		
+//
 		roomList.add(new SeletorDataInfo("11.00"));
 		for (int i = 0; i <3; i++) {
             MessageItem item = new MessageItem();
@@ -103,14 +106,14 @@ public class jizhangActivity extends Activity {
         }
 		allList.add(subList);
 
-		
-		ListViewAdapter mListViewAdapter  = new ListViewAdapter(this, roomList, allList);
+		ListViewAdapter mListViewAdapter = new ListViewAdapter(this, roomList, allList);
+	
 		list.setEmptyView(emptyView);
-		
+	
 		if(mListViewAdapter==null)
 			mListViewAdapter = new ListViewAdapter(this, null, null);
 		
-		list.setAdapter(this,mListViewAdapter);
+		list.setAdapter(mListViewAdapter);
 
 	}
 }

@@ -10,6 +10,7 @@ import java.util.Map;
 
 
 
+
 import com.example.yijibang.R;
 import com.example.yijibang.jizhang.biaoqian.AppAdapter;
 import com.example.yijibang.jizhang.biaoqian.PageControlView;
@@ -25,6 +26,7 @@ import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -43,6 +45,8 @@ public class jizhangmingxiActivity extends Activity {
 	public int n=0;
 	private DataLoading dataLoad;
 	private EditText editTextJine;
+	
+	private View viewSave,viewReturn;
 
 	public void onCreate(Bundle savedInstanceState) {
 		
@@ -50,6 +54,24 @@ public class jizhangmingxiActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		setContentView(R.layout.activity_jizhangmingxi);
+		
+		viewSave = findViewById(R.id.viewSave);
+		viewSave.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				finish();
+			}
+		});
+		
+		viewReturn = findViewById(R.id.viewReturn);
+		viewReturn.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				finish();
+			}
+		});
 		
 		mContext = this;
 		editTextJine = (EditText) findViewById(R.id.editTextJine);

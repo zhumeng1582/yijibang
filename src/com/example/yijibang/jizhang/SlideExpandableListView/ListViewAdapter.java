@@ -98,7 +98,7 @@ public class ListViewAdapter extends BaseAdapter{
             
             viewHolder.lv.setAdapter(new SlideAdapter(mContext, allList.get(position)));
 
-            //viewHolder.lv.setAdapter(new ItemAdapter(mContext, allList.get(position)));
+            
         }
       //**********************************************************************************************************
         RelativeLayout footer = (RelativeLayout) convertView.findViewById(R.id.expandable); 
