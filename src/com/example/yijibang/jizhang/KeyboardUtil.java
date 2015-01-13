@@ -6,6 +6,7 @@ import com.example.yijibang.R;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.inputmethodservice.Keyboard.Key;
@@ -34,6 +35,8 @@ public class KeyboardUtil {
 		keyboardView.setKeyboard(key);
 		keyboardView.setEnabled(true);
 		keyboardView.setPreviewEnabled(false);
+		
+				
 		keyboardView.setOnKeyboardActionListener(listener);
 	}
 

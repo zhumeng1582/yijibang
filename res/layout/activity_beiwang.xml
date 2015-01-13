@@ -84,7 +84,7 @@
         	android:horizontalSpacing="10dp"
         	android:verticalSpacing="10dp"
         	android:descendantFocusability="blocksDescendants"
-        	android:gravity="center"  ></GridView>
+        	android:gravity="center"  />
 		<LinearLayout
             android:id="@+id/empty"
             android:layout_width="fill_parent"

@@ -11,6 +11,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,6 +65,7 @@ public class AppAdapter extends BaseAdapter {
 			View v = LayoutInflater.from(mContext).inflate(R.layout.app_item, null);
 			
 			appItem = new AppItem();
+			
 			appItem.mAppName = (TextView)v.findViewById(R.id.tuaninfo);
 			
 			v.setTag(appItem);

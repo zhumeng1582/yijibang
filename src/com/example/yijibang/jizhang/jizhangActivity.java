@@ -70,7 +70,7 @@ public class jizhangActivity extends Activity {
 		list = (ActionSlideExpandableListView)this.findViewById(R.id.list);
 //		
 //
-		roomList.add(new SeletorDataInfo("11.00"));
+		roomList.add(new SeletorDataInfo("10.00"));
 		for (int i = 0; i <3; i++) {
             MessageItem item = new MessageItem();
             if (i % 3 == 0) {
@@ -105,6 +105,179 @@ public class jizhangActivity extends Activity {
             subList.add(item);
         }
 		allList.add(subList);
+		
+		roomList.add(new SeletorDataInfo("12.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		
+		roomList.add(new SeletorDataInfo("13.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		
+		roomList.add(new SeletorDataInfo("14.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("15.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("16.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("17.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("18.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("19.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("20.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
+		roomList.add(new SeletorDataInfo("21.00"));
+		subList =new  ArrayList<MessageItem>(); 
+		for (int i = 0; i < 5; i++) {
+            MessageItem item = new MessageItem();
+            if (i % 3 == 0) {
+                
+                item.tvTitle1 = "ÂòÒÂ·þ";
+                item.listview_item_name = "-11.00";
+                
+            } else {
+                item.tvTitle1 = "³Ô·¹";
+                
+                item.listview_item_name = "-11.00";
+            }
+            subList.add(item);
+        }
+		allList.add(subList);
 
 		ListViewAdapter mListViewAdapter = new ListViewAdapter(this, roomList, allList);
 	
@@ -113,7 +286,10 @@ public class jizhangActivity extends Activity {
 		if(mListViewAdapter==null)
 			mListViewAdapter = new ListViewAdapter(this, null, null);
 		
-		list.setAdapter(mListViewAdapter);
+		list.setAdapter(mListViewAdapter,R.id.expandable_toggle_button, R.id.expandable);
+		
+//		list.setSelection(9);
+//		list.getAdapter().getView(9, null, null).findViewById(R.id.expandable_toggle_button).performClick();
 
 	}
 }

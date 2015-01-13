@@ -19,6 +19,7 @@ import android.content.Context;
 class SlideExpandableListView extends ListView {
 	private SlideExpandableListAdapter adapter;
 	private Scroller mScroller = null ; //Scroller¶ÔÏóÊµÀý
+	private int expandableToggleView;
 
 	public SlideExpandableListView(Context context) {
 		super(context);
@@ -47,10 +48,12 @@ class SlideExpandableListView extends ListView {
 		return false;
 	}
 
-	public void setAdapter(ListAdapter adapter) {
-		this.adapter = new SlideExpandableListAdapter(adapter);
+	public void setAdapter(ListAdapter adapter,int expandableToggleView, int expandable) {
+		this.expandableToggleView = expandableToggleView;
+		this.adapter = new SlideExpandableListAdapter(adapter,expandableToggleView,expandable);
 		super.setAdapter(this.adapter);
 	}
+
 
 	/**
 	 * Registers a OnItemClickListener for this listview which will
@@ -60,15 +63,15 @@ class SlideExpandableListView extends ListView {
 	 *
 	 * Important: This method call setOnItemClickListener, so the value will be reset
 	 */
-	public void enableExpandOnItemClick() {
-		this.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-				SlideExpandableListAdapter adapter = (SlideExpandableListAdapter)getAdapter();
-				adapter.getExpandToggleButton(view).performClick();
-			}
-		});
-	}
+//	public void enableExpandOnItemClick() {
+//		this.setOnItemClickListener(new OnItemClickListener() {
+//			@Override
+//			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//				SlideExpandableListAdapter adapter = (SlideExpandableListAdapter)getAdapter();
+//				adapter.getExpandToggleButton(view).performClick();
+//			}
+//		});
+//	}
 
 
 	@Override

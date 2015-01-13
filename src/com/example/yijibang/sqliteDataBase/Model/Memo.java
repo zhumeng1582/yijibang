@@ -1,5 +1,7 @@
 package com.example.yijibang.sqliteDataBase.Model;
 
+import com.example.yijibang.SlideView.SlideView;
+
 public class Memo {
 	
 	private String    userId;                       //当前AVUser的objectId
@@ -7,6 +9,7 @@ public class Memo {
 	private String    eventDate;                    //备忘时间的时间戳
 	private String    soundFilePath;                //录音文件的路径
 	private int 	  color;
+	public SlideView slideView;
 	
 	
 	public Memo(String userId,String remark,String eventDate,String soundFilePath,int color){

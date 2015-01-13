@@ -6,6 +6,7 @@ import java.util.List;
 import com.example.yijibang.R;
 
 
+import com.example.yijibang.SlideView.GridViewCompat;
 import com.example.yijibang.SlideView.ListViewCompat;
 import com.example.yijibang.SlideView.MessageItem;
 import com.example.yijibang.SlideView.SlideAdapter;

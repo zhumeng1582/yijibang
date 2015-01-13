@@ -17,6 +17,7 @@ import com.example.yijibang.sqliteDataBase.Model.BiaoQian;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -84,6 +85,7 @@ public class tianjiajizhangActivity extends Activity {
 		editTextJine = (EditText) findViewById(R.id.editTextJine);
 		
 		keyboardUtil =  new KeyboardUtil(this, mContext, editTextJine);
+
 		keyboardUtil.showKeyboard();
 		
 		keyboardUtil.setOnKeyClickListener(new OnKeyClickListener() {
