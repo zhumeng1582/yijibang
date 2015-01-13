@@ -18,8 +18,7 @@ public class KeyboardUtil {
 	private Context ctx;
 	private Activity act;
 	private KeyboardView keyboardView;
-	private Keyboard k1;// 字母键盘
-	private Keyboard k2;// 数字键盘
+	private Keyboard key;// 字母键盘
 	public boolean isnun = false;// 是否数据键盘
 	public boolean isupper = false;// 是否大写
 
@@ -29,10 +28,10 @@ public class KeyboardUtil {
 		this.act = act;
 		this.ctx = ctx;
 		this.ed = edit;
-		k1 = new Keyboard(ctx, R.xml.qwerty);
-		k2 = new Keyboard(ctx, R.xml.symbols);
+		
+		key = new Keyboard(ctx, R.xml.symbols);
 		keyboardView = (KeyboardView) act.findViewById(R.id.keyboard_view);
-		keyboardView.setKeyboard(k2);
+		keyboardView.setKeyboard(key);
 		keyboardView.setEnabled(true);
 		keyboardView.setPreviewEnabled(false);
 		keyboardView.setOnKeyboardActionListener(listener);
@@ -75,25 +74,25 @@ public class KeyboardUtil {
 			onKeyClickListener.onKeyClick(primaryCode);
 			
 			
-			if (primaryCode == Keyboard.KEYCODE_CANCEL) {// 完成
+			if (primaryCode == Keyboard.KEYCODE_CANCEL) {
 				hideKeyboard();
-			} else if (primaryCode == Keyboard.KEYCODE_DELETE) {// 回�?
+			} else if (primaryCode == Keyboard.KEYCODE_DELETE) {
 				if (editable != null && editable.length() > 0) {
 					if (start > 0) {
 						editable.delete(start - 1, start);
 					}
 				}
-			} else if (primaryCode == Keyboard.KEYCODE_SHIFT) {// 大小写切�?
+			} else if (primaryCode == Keyboard.KEYCODE_SHIFT) {
 				changeKey();
-				keyboardView.setKeyboard(k1);
+				keyboardView.setKeyboard(key);
 
-			} else if (primaryCode == Keyboard.KEYCODE_MODE_CHANGE) {// 数字键盘切换
+			} else if (primaryCode == Keyboard.KEYCODE_MODE_CHANGE) {
 				if (isnun) {
 					isnun = false;
-					keyboardView.setKeyboard(k1);
+					keyboardView.setKeyboard(key);
 				} else {
 					isnun = true;
-					keyboardView.setKeyboard(k2);
+					keyboardView.setKeyboard(key);
 				}
 			} else if (primaryCode == 57419) { // go left
 				if (start > 0) {
@@ -114,7 +113,7 @@ public class KeyboardUtil {
 	 * 键盘大小写切�?
 	 */
 	private void changeKey() {
-		List<Key> keylist = k1.getKeys();
+		List<Key> keylist = key.getKeys();
 		if (isupper) {//大写切换小写
 			isupper = false;
 			for(Key key:keylist){

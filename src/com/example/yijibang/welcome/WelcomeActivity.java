@@ -68,9 +68,9 @@ public class WelcomeActivity extends Activity implements OnPageChangeListener,
 			views.add(imageView);
 		
 			indicators[i] = new ImageView(context);
-			indicators[i].setBackgroundResource(R.drawable.indicators_default);
+			indicators[i].setBackgroundResource(R.drawable.fenye);
 			if (i == 0) {
-				indicators[i].setBackgroundResource(R.drawable.indicators_now);
+				indicators[i].setBackgroundResource(R.drawable.fenyesel);
 			}
 			indicatorLayout.addView(indicators[i]);
 		}
@@ -116,10 +116,10 @@ public class WelcomeActivity extends Activity implements OnPageChangeListener,
 		}
 
 		for (int i = 0; i < indicators.length; i++) {
-			indicators[arg0].setBackgroundResource(R.drawable.indicators_now);
+			indicators[arg0].setBackgroundResource(R.drawable.fenyesel);
 			if (arg0 != i) {
 				indicators[i]
-						.setBackgroundResource(R.drawable.indicators_default);
+						.setBackgroundResource(R.drawable.fenye);
 			}
 		}
 	}

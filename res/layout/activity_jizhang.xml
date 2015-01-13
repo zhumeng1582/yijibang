@@ -72,32 +72,32 @@
             android:orientation="horizontal" >
             <com.example.yijibang.jizhang.RoundProgressBar
 		        android:id="@+id/roundProgressBarShouRu"
-		        android:layout_width="84dip"
-		        android:layout_height="84dip"
+		        android:layout_width="84dp"
+		        android:layout_height="84dp"
 		        android:layout_margin="10dp"
 		        android_custom:textTitle="收入"
 		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
-		        android_custom:roundWidth="4dip"
+		        android_custom:roundWidth="4dp"
 		        android_custom:roundProgressColor="@color/progress1"
 		         />
             <com.example.yijibang.jizhang.RoundProgressBar
 		        android:id="@+id/roundProgressBarZhiChu"
-		        android:layout_width="84dip"
-		        android:layout_height="84dip" 
+		        android:layout_width="84dp"
+		        android:layout_height="84dp" 
 		        android:layout_margin="10dp"
 		        android_custom:textTitle="支出"
 		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
-		        android_custom:roundWidth="4dip"
+		        android_custom:roundWidth="4dp"
 		        android_custom:roundProgressColor="@color/red"
 		        />
             <com.example.yijibang.jizhang.RoundProgressBar
 		        android:id="@+id/roundProgressBarJieYu"
-		        android:layout_width="84dip"
-		        android:layout_height="84dip" 
+		        android:layout_width="84dp"
+		        android:layout_height="84dp" 
 		        android:layout_margin="10dp"
 		        android_custom:textTitle="结余"
 		        android_custom:roundColor="@color/roundprogressbarbackgroundcolor"
-		        android_custom:roundWidth="4dip"
+		        android_custom:roundWidth="4dp"
 		        android_custom:roundProgressColor="@color/green"
 		        />
            
@@ -122,7 +122,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="match_parent"
 	            
-	            android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+	            android:src="@drawable/tianjia" />
             <TextView
                 android:id="@+id/tVjiyibi"
                 android:layout_width="wrap_content"

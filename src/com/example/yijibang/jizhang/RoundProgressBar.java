@@ -86,7 +86,7 @@ public class RoundProgressBar extends View {
 		roundColor = mTypedArray.getColor(R.styleable.RoundProgressBar_roundColor, Color.RED);
 		roundProgressColor = mTypedArray.getColor(R.styleable.RoundProgressBar_roundProgressColor, Color.GREEN);
 		textColor = mTypedArray.getColor(R.styleable.RoundProgressBar_textColor, Color.WHITE);
-		textSize = mTypedArray.getDimension(R.styleable.RoundProgressBar_textSize, 28);
+		textSize = mTypedArray.getDimension(R.styleable.RoundProgressBar_textSize, 20);
 		roundWidth = mTypedArray.getDimension(R.styleable.RoundProgressBar_roundWidth, 5);
 		title = mTypedArray.getNonResourceString(R.styleable.RoundProgressBar_textTitle);
 		

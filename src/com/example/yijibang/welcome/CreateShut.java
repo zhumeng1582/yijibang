@@ -20,7 +20,7 @@ public class CreateShut {
 		String title = activity.getResources().getString(R.string.app_name);
 		
 		Parcelable icon = Intent.ShortcutIconResource.fromContext(
-				activity, R.drawable.ic_launcher);
+				activity, R.drawable.icon);
 		
 		Intent myIntent = new Intent(activity, StartUpActivity.class);
 		
