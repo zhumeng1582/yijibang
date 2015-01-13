@@ -6,13 +6,15 @@ public class Memo {
 	private String    remark;                       //备忘的名称的说明，例如妈妈生日
 	private String    eventDate;                    //备忘时间的时间戳
 	private String    soundFilePath;                //录音文件的路径
+	private int 	  color;
 	
 	
-	public Memo(String userId,String remark,String eventDate,String soundFilePath){
+	public Memo(String userId,String remark,String eventDate,String soundFilePath,int color){
 		this.userId = userId;                     
 		this.remark = remark;                     
 		this.eventDate = eventDate;                  
 		this.soundFilePath = soundFilePath; 
+		this.color = color;
 	}
 	
 	
@@ -39,6 +41,16 @@ public class Memo {
 	}
 	public void setSoundFilePath(String soundFilePath) {
 		this.soundFilePath = soundFilePath;
+	}
+
+
+	public int getColor() {
+		return color;
+	}
+
+
+	public void setColor(int color) {
+		this.color = color;
 	}
 
 	

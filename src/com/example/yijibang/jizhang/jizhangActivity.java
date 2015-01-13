@@ -50,7 +50,7 @@ public class jizhangActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent i = new Intent();
-				i.setClass(jizhangActivity.this,jizhangmingxiActivity.class);
+				i.setClass(jizhangActivity.this,tianjiajizhangActivity.class);
 				startActivity(i);
 			}
 		});

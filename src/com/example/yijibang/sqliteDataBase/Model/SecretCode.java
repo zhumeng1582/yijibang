@@ -7,6 +7,7 @@ public class SecretCode {
 	private String   accountName;					//账号
 	private String   secretCode;                   //密码，
 	private String   soundFilePath;                //录音文件的路径
+
 	
 	public SecretCode(String userId,String remark,String accountName,String secretCode,String soundFilePath){
 		this.userId=userId;                       //当前AVUser的objectId
@@ -14,6 +15,8 @@ public class SecretCode {
 		this.accountName=accountName;					//账号
 		this.secretCode=secretCode;                   //密码，
 		this.soundFilePath=soundFilePath;         
+
+		
 	}
 	
 	
@@ -47,6 +50,4 @@ public class SecretCode {
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
 	}
-
-
 }

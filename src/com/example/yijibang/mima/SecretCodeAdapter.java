@@ -57,12 +57,14 @@ public class SecretCodeAdapter extends BaseAdapter{
 	    			viewHolder.tvName = (TextView) convertView.findViewById(R.id.tvRemark);
 	    			
 	    			convertView.setTag(viewHolder);
-	    			 
+	    			
+	    			
 	            }  
 	            else { 
 	            	viewHolder = (ViewHolder) convertView.getTag();
 	            } 
 	            SecretCode secretCode = array.get(position);
+	            
 	            viewHolder.tvName.setText(secretCode.getRemark());
 	            return convertView; 
 	            

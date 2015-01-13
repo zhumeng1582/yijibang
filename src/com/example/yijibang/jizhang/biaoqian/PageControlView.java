@@ -72,9 +72,9 @@ public class PageControlView extends LinearLayout {
 	             
 	             ImageView imageView = new ImageView(context);
 	             if(currentNum + i + 1 == pageNo){
-	            	 imageView.setImageResource(R.drawable.page_indicator_focused);
+	            	 imageView.setImageResource(R.drawable.indicators_now);
 	             }else{
-	            	 imageView.setImageResource(R.drawable.page_indicator);
+	            	 imageView.setImageResource(R.drawable.indicators_default);
 	             }
 	             this.addView(imageView);
 	         }   

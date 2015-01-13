@@ -50,6 +50,7 @@ public class MainActivity extends TabActivity {
 		
 		initTab();
 		init();
+
 	}
 	
         
@@ -72,6 +73,10 @@ public class MainActivity extends TabActivity {
     	text_tab_mima = (TextView) findViewById(R.id.tab_mima_text) ;
     	text_tab_shezhi = (TextView) findViewById(R.id.tab_shezhi_text) ;
     	
+    	img_tab_jizhang.setImageResource(R.drawable.jizhangsel);
+    	text_tab_jizhang.setTextColor(res.getColor(R.color.blue));
+    	
+    	
         main_tab_jizhang.setOnClickListener(new OnClickListener() {
         	public void onClick(View arg0) {
         		if(tabHost.getCurrentTabTag().equals(one)){
@@ -85,10 +90,10 @@ public class MainActivity extends TabActivity {
                 img_tab_mima.setImageResource(R.drawable.mima);
                 img_tab_shezhi.setImageResource(R.drawable.shezhi);
                 //文字点亮
-                text_tab_jizhang.setTextColor(res.getColor(R.color.shen));
-                text_tab_beiwang.setTextColor(res.getColor(R.color.qian));
-                text_tab_mima.setTextColor(res.getColor(R.color.qian));
-                text_tab_shezhi.setTextColor(res.getColor(R.color.qian));
+                text_tab_jizhang.setTextColor(res.getColor(R.color.blue));
+                text_tab_beiwang.setTextColor(res.getColor(R.color.shen));
+                text_tab_mima.setTextColor(res.getColor(R.color.shen));
+                text_tab_shezhi.setTextColor(res.getColor(R.color.shen));
             }
         });
         
@@ -99,17 +104,16 @@ public class MainActivity extends TabActivity {
         		}
         		
         		tabHost.setCurrentTabByTag(two);
-                            	
                 //图片点亮
                 img_tab_jizhang.setImageResource(R.drawable.jizhang);
                 img_tab_beiwang.setImageResource(R.drawable.beiwangsel);
                 img_tab_mima.setImageResource(R.drawable.mima);
                 img_tab_shezhi.setImageResource(R.drawable.shezhi);
                 //文字点亮
-                text_tab_jizhang.setTextColor(res.getColor(R.color.qian));
-                text_tab_beiwang.setTextColor(res.getColor(R.color.shen));
-                text_tab_mima.setTextColor(res.getColor(R.color.qian));
-                text_tab_shezhi.setTextColor(res.getColor(R.color.qian));
+                text_tab_jizhang.setTextColor(res.getColor(R.color.shen));
+                text_tab_beiwang.setTextColor(res.getColor(R.color.blue));
+                text_tab_mima.setTextColor(res.getColor(R.color.shen));
+                text_tab_shezhi.setTextColor(res.getColor(R.color.shen));
             }
         });
         
@@ -126,10 +130,10 @@ public class MainActivity extends TabActivity {
     	        img_tab_mima.setImageResource(R.drawable.mimasel);
     	        img_tab_shezhi.setImageResource(R.drawable.shezhi);
     	        //文字点亮
-    	        text_tab_jizhang.setTextColor(res.getColor(R.color.qian));
-    	        text_tab_beiwang.setTextColor(res.getColor(R.color.qian));
-    	        text_tab_mima.setTextColor(res.getColor(R.color.shen));
-    	        text_tab_shezhi.setTextColor(res.getColor(R.color.qian));
+    	        text_tab_jizhang.setTextColor(res.getColor(R.color.shen));
+    	        text_tab_beiwang.setTextColor(res.getColor(R.color.shen));
+    	        text_tab_mima.setTextColor(res.getColor(R.color.blue));
+    	        text_tab_shezhi.setTextColor(res.getColor(R.color.shen));
         	}
         });
             
@@ -146,10 +150,10 @@ public class MainActivity extends TabActivity {
 		        img_tab_mima.setImageResource(R.drawable.mima);
 		        img_tab_shezhi.setImageResource(R.drawable.shezhisel);
 		        //文字点亮
-		        text_tab_jizhang.setTextColor(res.getColor(R.color.qian));
-		        text_tab_beiwang.setTextColor(res.getColor(R.color.qian));
-		        text_tab_mima.setTextColor(res.getColor(R.color.qian));
-		        text_tab_shezhi.setTextColor(res.getColor(R.color.shen));
+		        text_tab_jizhang.setTextColor(res.getColor(R.color.shen));
+		        text_tab_beiwang.setTextColor(res.getColor(R.color.shen));
+		        text_tab_mima.setTextColor(res.getColor(R.color.shen));
+		        text_tab_shezhi.setTextColor(res.getColor(R.color.blue));
         	}
         });
     }

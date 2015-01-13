@@ -71,6 +71,10 @@ public class KeyboardUtil {
 		public void onKey(int primaryCode, int[] keyCodes) {
 			Editable editable = ed.getText();
 			int start = ed.getSelectionStart();
+			
+			onKeyClickListener.onKeyClick(primaryCode);
+			
+			
 			if (primaryCode == Keyboard.KEYCODE_CANCEL) {// 完成
 				hideKeyboard();
 			} else if (primaryCode == Keyboard.KEYCODE_DELETE) {// 回�?
@@ -102,6 +106,7 @@ public class KeyboardUtil {
 			}else {
 				editable.insert(start, Character.toString((char) primaryCode));
 			}
+			
 		}
 	};
 	
@@ -149,6 +154,16 @@ public class KeyboardUtil {
 			return true;
 		}
     	return false;
+    }
+    
+    public OnKeyClickListener onKeyClickListener;
+    public void setOnKeyClickListener(OnKeyClickListener onKeyClickListener) {
+		this.onKeyClickListener = onKeyClickListener;
+	}
+    
+    public interface OnKeyClickListener{
+    	void onKeyClick(int keyCode);
+    	
     }
 
 }

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android_custom="http://schemas.android.com/apk/res/com.example.yijibang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gridview_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativieLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" >
+        <RelativeLayout 
+            android:id="@+id/relativieLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/viewReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+                <ImageView
+				    android:id="@+id/ivReturn"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/fanhuidaohang" />
+            	<TextView
+	                android:id="@+id/tvReturn"
+			       	android:layout_width="wrap_content"
+			       	android:layout_height="wrap_content"
+			       	android:layout_margin="4dp"
+			       	android:textColor="@color/white"
+			       	android:textSize="15sp"
+			       	android:text="返回" />
+            </LinearLayout>
+            
+		  	<TextView
+		       	android:id="@+id/textView1"
+		       	android:layout_centerHorizontal="true"
+		       	android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"
+		       	android:layout_margin="4dp"
+		       	android:textColor="@color/white"
+		       	android:textSize="17sp"
+		       	android:text="添加备忘" />
+			<TextView
+		       	android:id="@+id/viewSave"
+		       	android:layout_alignParentRight="true"
+		       	android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"
+		       	android:layout_margin="4dp"
+		       	android:textColor="@color/white"
+		       	android:textSize="15sp"
+		       	android:text="完成" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    
+    <LinearLayout android:id="@+id/relativieLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativieLayout1"
+        android:orientation="vertical">
+
+		<LinearLayout
+		    android:id="@+id/linearContext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="55dp"
+		    android:layout_marginTop="10dp"
+		    android:paddingLeft="32dp"
+		    android:paddingRight="17dp"
+		    android:background="@color/white"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:layout_weight="1"
+		        android:textSize="15sp"
+		        android:textColor="@color/shen"
+		        android:text="内容：" />
+		    <EditText
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/beiwang_context_border"
+		        android:gravity="center_vertical"
+		        android:layout_weight="18"
+		        android:textSize="15sp"
+		        android:textColor="@color/shen"
+		        android:hint="输入备忘事件内容" />
+		    
+		</LinearLayout>
+
+        <LinearLayout
+		    android:id="@+id/linearContext"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginTop="1dp"
+		   	android:paddingLeft="32dp"
+		    android:paddingRight="17dp"
+		    android:background="@color/white"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:textSize="15sp"
+		        android:gravity="center"
+		        android:layout_weight="1"
+		        android:textColor="@color/shen"
+		        android:text="提醒：" />
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical"
+		        android:layout_weight="18"
+		        android:textSize="15sp"
+		        android:textColor="@color/shen"
+		        android:hint="选择提醒时间" />
+
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:src="@drawable/tiaomujiantou" />
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/linearContext"
+		    android:layout_width="match_parent"
+		    android:layout_height="55dp"
+		    android:layout_marginTop="1dp"
+		    android:paddingLeft="32dp"
+		    android:paddingRight="17dp"
+		    android:background="@color/white"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:layout_weight="1"
+		        android:textSize="15sp"
+		        android:textColor="@color/shen"
+		        android:text="提醒方式：" />
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical"
+		        android:layout_weight="18"
+		        android:textSize="15sp"
+		        android:textColor="@color/shen"
+		        android:text="通知" />
+
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:src="@drawable/tiaomujiantou" />
+
+		</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

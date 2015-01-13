@@ -3,6 +3,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="key_height">62.0dip</dimen>
+    <dimen name="key_height">55.0dip</dimen>
+    <dimen name="key_height2">110.0dip</dimen>
 
 </resources>

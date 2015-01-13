@@ -57,14 +57,13 @@ public class MemoAdapter extends BaseAdapter{
 
             
             Memo modelMemo = array.get(position);
-//            viewHolder.tvName.getBackground().setAlpha(100);
-            viewHolder.tvName.setText(modelMemo.getRemark());
-            //viewHolder.tvTime.getBackground().setAlpha(100);
-            
-            String time = modelMemo.getEventDate();
-            viewHolder.tvTime.setText(time);
-            
 
+            viewHolder.tvName.setText(modelMemo.getRemark());
+            viewHolder.tvName.setTextColor(context.getResources().getColor(modelMemo.getColor()));
+
+            viewHolder.tvTime.setText(modelMemo.getEventDate());
+            viewHolder.tvTime.setTextColor(context.getResources().getColor(modelMemo.getColor()));
+            
             return convertView; 
         } 
         

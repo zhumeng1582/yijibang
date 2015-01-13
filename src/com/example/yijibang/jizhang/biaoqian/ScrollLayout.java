@@ -55,6 +55,7 @@ public class ScrollLayout extends ViewGroup {
 
 		mCurScreen = mDefaultScreen;
 		mTouchSlop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
+		Log.e("ScrollLayout", "mTouchSlop����"+mTouchSlop);
 	}
 
 	@Override
@@ -187,13 +188,14 @@ public class ScrollLayout extends ViewGroup {
 				Log.e(TAG, "snap left");
 				onScreenChangeListener.onScreenChange(mCurScreen - 1);
 				System.out.println("mCurScreen=" + (mCurScreen - 1));
+				
 				snapToScreen(mCurScreen - 1);
 			} else if (velocityX < -SNAP_VELOCITY
 					&& mCurScreen < getChildCount() - 1) {
 				// Fling enough to move right
 				Log.e(TAG, "snap right");
 				onScreenChangeListener.onScreenChange(mCurScreen + 1);
-				//只往右移动才加载数据
+
 				onScreenChangeListenerDataLoad.onScreenChange(mCurScreen+1);
 				snapToScreen(mCurScreen + 1);
 			} else {
@@ -252,6 +254,7 @@ public class ScrollLayout extends ViewGroup {
 		}
 
 		return mTouchState != TOUCH_STATE_REST;
+		
 	}
 
 	//分页监听

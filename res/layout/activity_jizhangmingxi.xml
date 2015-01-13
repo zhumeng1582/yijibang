@@ -15,6 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:orientation="horizontal">
             <LinearLayout
                 android:id="@+id/viewReturn"
@@ -139,14 +141,13 @@
 	            android:id="@+id/keyboard_view"
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
-	            android:layout_margin="0dp"
 	            android:focusable="true"
-	            android:labelTextSize="17sp"
-	            android:keyTextSize="17sp"
+	            android:labelTextSize="14sp"
+	            android:keyTextSize="14sp"
 	            android:focusableInTouchMode="true"
 	            android:background="@color/lightblack"
 	            android:keyBackground="@drawable/keyboard_key" 
-	            android:keyTextColor="@color/qian"/>
+	            android:keyTextColor="@color/shen"/>
 
         </LinearLayout>
     </RelativeLayout>

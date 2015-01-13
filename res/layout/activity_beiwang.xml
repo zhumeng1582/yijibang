@@ -28,6 +28,7 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:textColor="@color/white"
+		        android:typeface="sans"
 		        android:textSize="17sp"
 		        android:text="备忘" />
         </LinearLayout>
@@ -37,7 +38,7 @@
     </RelativeLayout>
     
     <RelativeLayout
-        android:id="@+id/relativieLayout3"
+        android:id="@+id/relativieLayoutTianJiaBeiWang"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -71,13 +72,14 @@
        android:id="@+id/relativieLayout2"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
-        android:background="@color/gridview_background"
-       android:layout_above="@id/relativieLayout3"
+       android:background="@color/gridview_background"
+       android:layout_above="@id/relativieLayoutTianJiaBeiWang"
        android:layout_below="@id/relativieLayout1">
        <GridView
            	android:id="@+id/gridViewUnforget"
        		android:layout_width="match_parent"  
         	android:layout_height="match_parent"
+        	android:layout_marginTop="10dp"
         	android:numColumns="2"
         	android:horizontalSpacing="10dp"
         	android:verticalSpacing="10dp"
