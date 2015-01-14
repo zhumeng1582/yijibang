@@ -16,10 +16,10 @@
             android:id="@+id/linearLayout1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="33dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="@dimen/title_marginTop"
+            android:layout_marginBottom="@dimen/title_marginBottom"
+            android:layout_marginLeft="@dimen/title_marginLeft"
+            android:layout_marginRight="@dimen/title_marginRight"
             android:orientation="vertical" >
             <TextView
 		        android:layout_gravity="center"

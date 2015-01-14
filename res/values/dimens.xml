@@ -5,5 +5,16 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="key_height">55.0dip</dimen>
     <dimen name="key_height2">110.0dip</dimen>
-
+    
+    <dimen name="title_marginTop">10dp</dimen>
+    <dimen name="title_marginBottom">10dp</dimen>
+    <dimen name="title_marginLeft">5dp</dimen>
+    <dimen name="title_marginRight">5dp</dimen>
+    
+    <dimen name="radio_marginTop">10dp</dimen>
+    <dimen name="radio_marginBottom">10dp</dimen>
+    <dimen name="radio_marginLeft">15dp</dimen>
+    <dimen name="radio_marginRight">15dp</dimen>
+    
+    
 </resources>

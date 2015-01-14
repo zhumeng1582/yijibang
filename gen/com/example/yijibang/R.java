@@ -1021,6 +1021,14 @@ containing a value of this type.
         public static final int activity_vertical_margin=0x7f090012;
         public static final int key_height=0x7f090013;
         public static final int key_height2=0x7f090014;
+        public static final int radio_marginBottom=0x7f09001a;
+        public static final int radio_marginLeft=0x7f09001b;
+        public static final int radio_marginRight=0x7f09001c;
+        public static final int radio_marginTop=0x7f090019;
+        public static final int title_marginBottom=0x7f090016;
+        public static final int title_marginLeft=0x7f090017;
+        public static final int title_marginRight=0x7f090018;
+        public static final int title_marginTop=0x7f090015;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;

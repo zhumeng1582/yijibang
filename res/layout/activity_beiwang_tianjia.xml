@@ -14,10 +14,10 @@
             android:id="@+id/relativieLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/title_marginTop"
+            android:layout_marginBottom="@dimen/title_marginBottom"
+            android:layout_marginLeft="@dimen/title_marginLeft"
+            android:layout_marginRight="@dimen/title_marginRight"
             android:orientation="horizontal">
             <LinearLayout
                 android:id="@+id/viewReturn"
@@ -25,6 +25,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_margin="4dp"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
                 android:orientation="horizontal">
                 <ImageView
 				    android:id="@+id/ivReturn"
@@ -36,6 +38,7 @@
 			       	android:layout_width="wrap_content"
 			       	android:layout_height="wrap_content"
 			       	android:layout_margin="4dp"
+			       	android:gravity="center_vertical"
 			       	android:textColor="@color/white"
 			       	android:textSize="15sp"
 			       	android:text="返回" />

@@ -196,6 +196,14 @@ int dimen activity_horizontal_margin 0x7f090011
 int dimen activity_vertical_margin 0x7f090012
 int dimen key_height 0x7f090013
 int dimen key_height2 0x7f090014
+int dimen radio_marginBottom 0x7f09001a
+int dimen radio_marginLeft 0x7f09001b
+int dimen radio_marginRight 0x7f09001c
+int dimen radio_marginTop 0x7f090019
+int dimen title_marginBottom 0x7f090016
+int dimen title_marginLeft 0x7f090017
+int dimen title_marginRight 0x7f090018
+int dimen title_marginTop 0x7f090015
 int drawable abc_ab_bottom_solid_dark_holo 0x7f020000
 int drawable abc_ab_bottom_solid_light_holo 0x7f020001
 int drawable abc_ab_bottom_transparent_dark_holo 0x7f020002
