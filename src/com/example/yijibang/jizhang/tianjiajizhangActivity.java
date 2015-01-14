@@ -57,7 +57,7 @@ public class tianjiajizhangActivity extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		
 		setContentView(R.layout.activity_jizhangmingxi);
 		
 		listAppPage = new ArrayList<GridView>();

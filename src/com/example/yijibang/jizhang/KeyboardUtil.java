@@ -35,7 +35,6 @@ public class KeyboardUtil {
 		keyboardView.setKeyboard(key);
 		keyboardView.setEnabled(true);
 		keyboardView.setPreviewEnabled(false);
-		
 				
 		keyboardView.setOnKeyboardActionListener(listener);
 	}
